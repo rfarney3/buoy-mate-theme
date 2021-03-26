@@ -85,6 +85,10 @@ img {
     padding: 1rem;
     list-style: 1.8;
     margin-bottom: 1rem;
+
+    img {
+        width: 250px;
+    }
 }
 
 // Singular Buoy/Listing Page
@@ -144,3 +148,5 @@ img {
     width: 50%;
     border-radius: 50%;
 }
+
+@import 'mobile';

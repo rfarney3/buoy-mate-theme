@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/f933328c0e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.css" />
+    <title>Welcome to BuoyMate</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="index.html">
+                <i class="fas fa-anchor"></i> BuoyMate
+            </a>
+        </h1>
+        <ul>
+            <li><a href="buoys.html">Buoys</a></li>
+            <li><a href="add-buoy.html">Become a Host</a></li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span class="hide-sm">
+                        My Profile
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hide-sm">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <section class="container">
+            <h1 class="large text-primary">
+                Register Your Buoy
+            </h1>
+            <p class="lead">
+                <i class="fas fa-anchor"></i> Register the buoy you would like to list
+            </p>
+            <small>* = required field</small>
+            <form class="form">
+                <div class="form-group">
+                    <select name="status">
+                        <option value="0">* Select Listing Status</option>
+                        <option value="Marina Buoy">Marina Buoy</option>
+                        <option value="Marina Dock">Marina Dock/Slip</option>
+                        <option value="Personal Buoy">Personal Buoy</option>
+                        <option value="Personal Dock">Personal Dock/Slip</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small class="form-text">Give us an idea of how to list your buoy</small>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <input type="checkbox" name="current" value="Yes" /> Yes
+                        <input type="checkbox" name="current" value="No" /> No
+                    </p>
+                    <small class="form-text">Will you or someone else provide access to the buoy?</small>
+                </div>
+                <div class="form-group">
+                    <select name="status">
+                        <option value="0">* Select Access Type</option>
+                        <option value="Walking">Walking</option>
+                        <option value="Water Taxi">Water Taxi</option>
+                        <option value="Dingy">Paddleboard/Self Operated Dingy</option>
+                        <option value="Swim">Swim</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <small class="form-text">What type of access is available?</small>
+                </div>
+                <div class="form-group">
+                    <input type="address" placeholder="* Street" name="street" required />
+                </div>
+                <div class="form-group">
+                    <input type="address" placeholder="* City" name="city" required />
+                </div>
+                <div class="form-group">
+                    <input type="address" placeholder="* State" name="state" required />
+                    <small class="form-text">e.g. CA</small>
+                </div>
+                <div class="form-group">
+                    <input type="address" placeholder="* Zip Code" name="zip" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="* Largest Boat Size Listing Can Accomodate" name="number"
+                        required />
+                </div>
+                <div class="form-group">
+                    <input type="file" name="photo" enctype=”multipart/form-data” required />
+                    <small class="form-text">Upload Photos</small>
+                </div>
+                <div class="form-group">
+                    <textarea name="description" cols="30" rows="5" placeholder="Listing Description"></textarea>
+                    <small class="form-text">
+                        Important information as to where the buoy is and/or how to gain access to
+                        it</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="* Price" name="price" required />
+                    <small class="form-text">Default daily price</small>
+                </div>
+                <div class="form-group">
+                    <select name="status">
+                        <option value="0">* Select Cancellation Policy</option>
+                        <option value="Flexible">Flexible</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Strict">Strict</option>
+                    </select>
+                    <small class="form-text">Select your cancellation policy</small>
+                </div>
+                <input type="submit" class="btn btn-primary my-1" />
+                <a class="btn my-1" href="dashboard.html">Go Back</a>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/f933328c0e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.css" />
+    <title>Welcome to BuoyMate</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="index.html">
+                <i class="fas fa-anchor"></i> BuoyMate
+            </a>
+        </h1>
+        <ul>
+            <li><a href="buoys.html">Buoys</a></li>
+            <li><a href="add-buoy.html">Become a Host</a></li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span class="hide-sm">
+                        My Profile
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hide-sm">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h1 class="large text-primary">Dashboard</h1>
+        <p class="lead"><i class="fas fa-user">Welcome John Doe</i></p>
+        <div class="dash-buttons">
+            <a href="create-profile.html" class="btn"><i class="fas fa-user-circle text-primary"></i> Edit Profile</a>
+            <a href="add-buoy.html" class="btn"><i class="fas fa-book text-primary"></i> Become a Buoy
+                Host</a>
+        </div>
+
+        <h2 class="my-2">
+            About
+        </h2>
+        <p><i class="fas fa-home"> Lives in New York, United States</i></p>
+
+        <h2 class="my-2">
+            Stays
+        </h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Owner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lake Tahoe, CA</td>
+                    <td class="hide-sm">July 4, 2016 - July 9, 2016</td>
+                    <td class="hide-sm">Vick Figone</td>
+                </tr>
+                <tr>
+                    <td>Lake Tahoe, CA</td>
+                    <td class="hide-sm">July 6, 2016 - July 11, 2016</td>
+                    <td class="hide-sm">Mike Heffernan</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="my-2">
+            <button class="btn btn-danger">
+                <i class="fas fa-user-minus"></i> Delete My Account
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>

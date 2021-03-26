@@ -8,6 +8,14 @@
         color: #888;
     }
 
+    input[type='address'] {
+        display: flex;
+        width: 50%;
+        padding: 0.4rem;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+    }
+
     input[type='text'],
     input[type='email'],
     input[type='password'],
@@ -19,5 +27,13 @@
         padding: 0.4rem;
         font-size: 1.2rem;
         border: 1px solid #ccc;
+    }
+
+    input[type='submit'] {
+        font: inherit;
+    }
+
+    .social-input {
+        display: flex;
     }
 }

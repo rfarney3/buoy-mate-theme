@@ -236,6 +236,16 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #f4f4f4;
+}
+
 .form-group {
   margin: 1.2rem 0;
 }
@@ -244,6 +254,16 @@
   display: block;
   margin-top: 0.3rem;
   color: #888;
+}
+
+.form input[type='address'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
 }
 
 .form input[type='text'],
@@ -257,6 +277,16 @@
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+}
+
+.form input[type='submit'] {
+  font: inherit;
+}
+
+.form .social-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 * {
@@ -363,6 +393,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.buoy img {
+  width: 250px;
+}
+
 .buoy-grid {
   display: -ms-grid;
   display: grid;
@@ -427,5 +461,52 @@ img {
 .profile-img {
   width: 50%;
   border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-top: 8rem;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  .buoy {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .buoy a,
+  .buoy button {
+    padding: 0.3rem 0.4rem;
+  }
+  .text-primary {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */

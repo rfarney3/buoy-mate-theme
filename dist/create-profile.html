@@ -21,42 +21,49 @@
         </h1>
         <ul>
             <li><a href="buoys.html">Buoys</a></li>
+            <li><a href="add-buoy.html">Become a Host</a></li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span class="hide-sm">
+                        My Profile
+                    </span>
+                </a>
+            </li>
             <li>
                 <a href="login.html">
                     <i class="fas fa-sign-out-alt"></i>
                     <span class="hide-sm">
-                        Login
+                        Logout
                     </span>
                 </a>
             </li>
         </ul>
     </nav>
     <section class="container">
-        <h1 class="large text-primary">
-            Sign Up
-        </h1>
-        <p class="lead">
-            <i class="fas fa-user">Create Your Account</i>
-        </p>
-        <form action="dashboard.html" class="form">
+        <h1 class="large text-primary">Create Your Profile</h1>
+        <p class="lead"><i class="fas fa-user">Let's get some information to make your profile standout</i></p>
+        <small>* = required fields</small>
+        <form class="form">
             <div class="form-group">
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Location" name="location" />
+                <small class="form-text">City & state suggested (eg. Boston, MA)</small>
             </div>
             <div class="form-group">
-                <input type="email" placeholder="Email Address" required>
+                <input type="date" placeholder="Birthday" name="birthday" />
+                <small class="form-text">Date of Birth</small>
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Password" required minlength="6">
+                <input type="text" placeholder="Languages" name="languages" />
+                <small class="form-text">List of languages you speak</small>
             </div>
             <div class="form-group">
-                <input type="password" placeholder="Confirm Password" required minlength="6">
+                <textarea placeholder="A short bio of yourself" name="bio"></textarea>
+                <small class="form-text">Tell us a little about yourself</small>
             </div>
-            <input type="submit" value="Regsiter" class="btn btn-primary">
+            <input type="submit" class="btn btn-primary my-1" />
+            <a class="btn btn-light my-1" href="dashboard.html">Go Back</a>
         </form>
-        <p class="my-1">
-            Already have an account?
-            <a href="login.html">Sign In</a>
-        </p>
     </section>
 </body>
 
